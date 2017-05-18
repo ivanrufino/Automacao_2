@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Mister Dog Automação</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configuração</string>
+
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="sala">Sala</string>
+    <string name="cozinha">Cozinha</string>
+    <string name="banheiro">Banheiro</string>
+    <string name="externo">Externo</string>
+    <string name="title_activity_acionador">Acionadores</string>
+    <string name="my_mail">ivan.rufino.m@gmail.com</string>
+    <string name="app_name_short">Mister Dog</string>
+
+</resources>

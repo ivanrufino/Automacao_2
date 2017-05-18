@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <!-- ip de acesso -->
+        <TextView
+            android:id="@+id/label_txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="IP de acesso"
+            android:textColor="@color/colorFontLabel"
+            android:textSize="22dip"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/ip_arduino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_txt1"
+            android:layout_alignBottom="@+id/label_txt1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toEndOf="@+id/label_txt1"
+            android:digits="0123456789.:"
+            android:hint="192.168.1.1"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/colorFontText"
+            android:textColorHint="@color/colorFontHint"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/label_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Qtd Rele"
+            android:textColor="@color/colorFontLabel"
+            android:textSize="22dip"
+            android:textStyle="bold"
+            android:layout_below="@+id/ip_arduino"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/ip_arduino" />
+
+        <!-- Quantidade de reles -->
+        <EditText
+            android:id="@+id/qtd_rele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label_txt2"
+            android:layout_alignBottom="@+id/label_txt2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="10dip"
+            android:layout_toEndOf="@+id/label_txt2"
+            android:digits="0123456789"
+            android:hint="1"
+            android:inputType="number|numberDecimal"
+            android:textColor="@color/colorFontText"
+            android:textColorHint="@color/colorFontHint"
+            android:textSize="20dip"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <Button
+            android:id="@+id/salvar_configgeral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:background="@color/colorButton"
+            android:text="Salvar"
+            android:textColor="@color/colorFontButton"
+            android:layout_below="@+id/qtd_rele"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</ScrollView>
